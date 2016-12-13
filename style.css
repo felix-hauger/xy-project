@@ -33,6 +33,10 @@ section {
   border: 2px solid grey;
 }
 
+.dnone {
+  display: none;
+}
+
 footer {
   display: flex;
   justify-content: space-around;
