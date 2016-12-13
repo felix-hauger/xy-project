@@ -40,6 +40,10 @@ footer {
   border: 2px solid green;
 }
 
+/* Change cursor :*/
+body {
+
+}
 /* H titles */
 
 h1 {
@@ -51,7 +55,17 @@ h1 {
 
 /* Lutins */
 
-/* GIfts */
+/* Gifts */
+.present {
+  width: 3em;
+  height: 3em;
+}
+
+div.present {
+  padding: 3em;
+  background: pink;
+  border-radius: 1000px;
+}
 
 /* Score */
 
