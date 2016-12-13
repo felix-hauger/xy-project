@@ -23,6 +23,16 @@ section {
   border: 2px solid red;
 }
 
+.lutins {
+  border: 2px solid pink;
+}
+.game {
+  border: 2px solid deeppink;
+}
+.sleigh {
+  border: 2px solid grey;
+}
+
 footer {
   display: flex;
   justify-content: space-around;
@@ -54,3 +64,9 @@ h1 {
 }
 
 /* Media Queries */
+
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  .santa {
+    display:none;
+  }
+}
