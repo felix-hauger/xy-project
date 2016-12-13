@@ -1,5 +1,56 @@
 /* General Styles */
 
+header {
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+main {
+  border: 2px solid black;
+  flex: 5;
+}
+
+aside {
+  border: 2px solid blue;
+  flex: 1;
+}
+
+section {
+  border: 2px solid red;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  background: #dedede;
+  border: 2px solid green;
+}
+
+/* H titles */
+
+h1 {
+  text-align: center;
+}
 /* Elements styles */
+
+/* Santa */
+
+/* Lutins */
+
+/* GIfts */
+
+/* Score */
+
+/* Timer */
+
+/* Footer */
+
+.footercol {
+  flex:1;
+}
 
 /* Media Queries */
