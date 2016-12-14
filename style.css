@@ -60,16 +60,15 @@ h1 {
 /* Lutins */
 
 /* Gifts */
-.present, .presentcontain {
+.gift, .giftcontain {
   width: 3em;
   height: 3em;
 }
 
-.presentcontain {
-  padding: 1em;
+.giftcontain {
   background: pink;
 }
-.presentcontain:hover {
+.giftcontain:hover {
   background: green;
 }
 
