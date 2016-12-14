@@ -45,8 +45,8 @@ footer {
 }
 
 /* Change cursor :*/
-body {
-
+* {
+  cursor: url(img/sled2.png), auto;
 }
 /* H titles */
 
@@ -60,15 +60,17 @@ h1 {
 /* Lutins */
 
 /* Gifts */
-.present {
+.present, .presentcontain {
   width: 3em;
   height: 3em;
 }
 
-div.present {
-  padding: 3em;
+.presentcontain {
+  padding: 1em;
   background: pink;
-  border-radius: 1000px;
+}
+.presentcontain:hover {
+  background: green;
 }
 
 /* Score */
