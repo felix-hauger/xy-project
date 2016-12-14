@@ -27,6 +27,8 @@ const countdownController = {
         this.displayElement.hour.text = diff.hour;
         this.displayElement.min.text = diff.min;
         this.displayElement.sec.text = diff.sec;
+
+        return this;
     },
 
     // Initialisation du compte à rebours (à appeler 1 fois au chargement de la page)
