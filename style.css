@@ -33,6 +33,30 @@ section {
   border: 2px solid grey;
 }
 
+.dnone {
+  display: none;
+}
+
+
+#start {
+  box-shadow: rgb(242, 156, 147) 0px 1px 0px 0px inset;
+  background: linear-gradient(rgb(254, 26, 0) 5%, rgb(206, 1, 0) 100%) rgb(254, 26, 0);
+  border-radius: 6px;
+  border: 1px solid rgb(216, 53, 38);
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: rgb(178, 62, 53) 0px 1px 0px;
+}
+
+#start:hover {
+    background: linear-gradient(rgb(206, 1, 0) 5%, rgb(254, 26, 0) 100%) rgb(206, 1, 0);
+}
 footer {
   display: flex;
   justify-content: space-around;
