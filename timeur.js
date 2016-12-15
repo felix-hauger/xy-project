@@ -2,7 +2,7 @@
 
 const countdownController = {
     // Configuration
-    targetTime: new Date('2017-11-05 00:00:00'), // Date cible du compte à rebours (00:00:00)
+    targetTime: new Date('2016-12-25 00:00:00'), // Date cible du compte à rebours (00:00:00)
     displayElement: { // Elements HTML où sont affichés les informations
         day:  0,
         hour: 0,
@@ -22,13 +22,14 @@ const countdownController = {
 
         // Calcul du temps restant
         let diff = this.dateDiff(timeNow, this.targetTime);
-
+        this.modifDom(diff);
         this.displayElement.day.text = diff.day;
         this.displayElement.hour.text = diff.hour;
         this.displayElement.min.text = diff.min;
         this.displayElement.sec.text = diff.sec;
 
         return this;
+
     },
 
     // Initialisation du compte à rebours (à appeler 1 fois au chargement de la page)
@@ -50,7 +51,7 @@ const countdownController = {
 
     // Calcul la différence entre 2 dates, en jour/heure/minute/seconde
     dateDiff: function(date1, date2){
-        let diff = {}                           // Initialisation du retour
+        let diff = {};                         // Initialisation du retour
         let tmp = date2 - date1;
 
         tmp = Math.floor(tmp/1000);             // Nombre de secondes entre les 2 dates
@@ -61,9 +62,17 @@ const countdownController = {
         diff.hour = tmp % 24;                   // Extraction du nombre d'heures
         tmp = Math.floor((tmp-diff.hour)/24);   // Nombre de jours restants
         diff.day = tmp;
-
+        //console.log(diff);
         return diff;
+
+    },
+    modifDom: function(diff) {
+      document.getElementById('countdown_day').innerText = diff.day;
+      document.getElementById('countdown_hour').innerText = diff.hour;
+      document.getElementById('countdown_min').innerText = diff.min;
+      document.getElementById('countdown_sec').innerText = diff.sec;
     }
+
 };
 
     // Lancement du compte à rebours au chargement de la page
