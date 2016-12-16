@@ -1,9 +1,25 @@
 
-let score = 0;
-
+/*
 const collision = function () {
-  document.querySelector(".gift").onMouseOver()
+  addEventListener(querySelector(".gift").mouseOver())
+}*/
+let cpt = 0;
+
+let mouseOver = function () {
+  this.style.display = "none" ;
+  cpt++;
+  document.getElementById("score").innerHTML = cpt;
 }
+
+for(let gift of document.getElementsByClassName("gift")) {
+  gift.onmouseover = mouseOver;
+}
+
+
+
+
+// compteur de points
+
 
 
 

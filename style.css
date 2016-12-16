@@ -65,8 +65,8 @@ footer {
 }
 
 /* Change cursor :*/
-* {
-  cursor: url(img/sled2.png), auto;
+.game {
+  cursor: url(img/sled2.png) 16 0, auto;
 }
 /* H titles */
 
