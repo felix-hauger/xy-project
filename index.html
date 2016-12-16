@@ -6,21 +6,20 @@
     <title>Projet Kittens</title>
   </head>
   <body>
-    <header>
+    <header class="dnone">
       <h1>Projet Kittens</h1>
     </header>
     <div class="container">
-      <aside class="santa">
+      <aside class="santa dnone">
         <h4>Père Noël</h4>
         <img src="img/pere-noel.png" alt="" />
       </aside>
       <main>
-        <div class="lutins">
+        <div class="lutins dnone">
           <h4>Lutins</h4>
         </div>
         <div class="game">
-          <h4>Game</h4>
-          <img src="img/un-chalet-sous-la-neige.jpg" alt="" />
+          <img src="img/bg.gif" alt="" />
           <button type="button" name="button" id="start">Démarrer</button>
         </div>
         <div class="sleigh">
@@ -32,16 +31,26 @@
         <h4>Scorel</h4>
         </section>
         <section id="timer">
-          <h4>Timer</h4>
+
           <div id="countdown">
-    <strong>Temps restant</strong> :
-    <span id="countdown_day" >--</span> jours
-    <span id="countdown_hour">--</span> heures
-    <span id="countdown_min" >--</span> minutes
-    <span id="countdown_sec" >--</span> secondes
+    <h4>Timer</h4>
+    <div class="time">
+      <div class="countain">
+        <span class="count" id="countdown_day" >--</span> <p>jours</p>
+      </div>
+      <div class="countain">
+        <span class="count" id="countdown_hour">--</span> <p>heures</p>
+      </div>
+      <div class="countain">
+        <span class="count" id="countdown_min" >--</span> <p>minutes</p>
+      </div>
+      <div class="countain">
+        <span class="count" id="countdown_sec" >--</span> <p>secondes</p>
+      </div>
+    </div>
           </div>
         </section>
-
+        <img src="img/pere-noel.png" alt="" />
       </aside>
 
     </div>
