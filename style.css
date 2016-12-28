@@ -80,7 +80,7 @@ h1 {
 /* Lutins */
 
 /* Gifts */
-.gift, .giftcontain {
+.gift, .giftcontain, .trap {
   width: 3em;
   height: 3em;
 }

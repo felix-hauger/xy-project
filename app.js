@@ -3,11 +3,15 @@
 const collision = function () {
   addEventListener(querySelector(".gift").mouseOver())
 }*/
-let cpt = 0;
+var cpt = 0;
 
 let mouseOver = function () {
+  if (this.classList.contains('gift')) {
+    cpt++;
+  } else {
+    cpt-=3;
+  }
   this.style.display = "none" ;
-  cpt++;
   document.getElementById("score").innerHTML = cpt;
 }
 
@@ -15,8 +19,12 @@ for(let gift of document.getElementsByClassName("gift")) {
   gift.onmouseover = mouseOver;
 }
 
+for(let trap of document.getElementsByClassName("trap")) {
+  trap.onmouseover = mouseOver;
+}
 
 
+//document.getElementsByClassName("trap")
 
 // compteur de points
 
