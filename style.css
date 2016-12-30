@@ -1,5 +1,8 @@
 /* General Styles */
 
+body {
+  margin: 0;
+}
 header {
 
 }
@@ -27,7 +30,13 @@ section {
   border: 2px solid pink;
 }
 .game {
+  position: relative;
   border: 2px solid deeppink;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100vh;
 }
 .sleigh {
   border: 2px solid grey;
@@ -37,8 +46,11 @@ section {
   display: none;
 }
 
-
+/* Buttons */
 #start {
+  position: absolute;
+  top: 50%;
+  right:50%;
   box-shadow: rgb(242, 156, 147) 0px 1px 0px 0px inset;
   background: linear-gradient(rgb(254, 26, 0) 5%, rgb(206, 1, 0) 100%) rgb(254, 26, 0);
   border-radius: 6px;
@@ -57,6 +69,8 @@ section {
 #start:hover {
     background: linear-gradient(rgb(206, 1, 0) 5%, rgb(254, 26, 0) 100%) rgb(206, 1, 0);
 }
+
+
 footer {
   display: flex;
   justify-content: space-around;
@@ -95,6 +109,29 @@ h1 {
 /* Score */
 
 /* Timer */
+
+.time {
+  display: flex;
+  justify-content: space-around;;
+}
+
+.countain {
+  box-sizing: border-box;
+}
+
+.countain p {
+
+}
+
+.count {
+  padding: 20%;
+  font-size: 2em;
+  color:red;
+  border: 2px solid rgb(206, 1, 0);
+  box-sizing: border-box;
+}
+
+
 
 /* Footer */
 

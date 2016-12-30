@@ -6,15 +6,16 @@
     <title>Projet Kittens</title>
   </head>
   <body>
-    <header>
+    <header class="dnone">
       <h1>Projet Kittens</h1>
     </header>
     <div class="container">
-      <aside class="santa">
+      <aside class="santa dnone">
         <h4>Père Noël</h4>
+        <img src="img/pere-noel.png" alt="" />
       </aside>
       <main>
-        <div class="lutins">
+        <div class="lutins dnone">
           <h4>Lutins</h4>
         </div>
         <div class="game">
@@ -23,6 +24,7 @@
           <div class="giftcontain"><img src="img/cadeau-blanc-grospoints-rouge.jpg" class="gift" alt="" /></div>
           <div class="giftcontain"><img src="img/cadeau-piege.jpg" class="trap" alt="" /></div>
           <div class="giftcontain"><img src="img/cadeau-piege.jpg" class="trap" alt="" /></div>
+          <img src="img/bg.gif" alt="" />
           <button type="button" name="button" id="start">Démarrer</button>
         </div>
         <div class="sleigh">
@@ -34,9 +36,26 @@
         <h4>Score : <span id="score">0</span></h4>
         </section>
         <section id="timer">
-          <h4>Timer</h4>
-        </section>
 
+          <div id="countdown">
+    <h4>Timer</h4>
+    <div class="time">
+      <div class="countain">
+        <span class="count" id="countdown_day" >--</span> <p>jours</p>
+      </div>
+      <div class="countain">
+        <span class="count" id="countdown_hour">--</span> <p>heures</p>
+      </div>
+      <div class="countain">
+        <span class="count" id="countdown_min" >--</span> <p>minutes</p>
+      </div>
+      <div class="countain">
+        <span class="count" id="countdown_sec" >--</span> <p>secondes</p>
+      </div>
+    </div>
+          </div>
+        </section>
+        <img src="img/pere-noel.png" alt="" />
       </aside>
 
     </div>
@@ -57,5 +76,6 @@
     </footer>
     <script src="app.js" charset="utf-8"></script>
     <script src="compt.js" charset="utf-8"></script>
+    <script src="timeur.js" charset="utf-8"></script>
   </body>
 </html>
