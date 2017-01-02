@@ -2,18 +2,23 @@
 
 "use strict"
 
-let counter = 60;
+let counter = 10;
 let intervalId = null;
-function action(){
+let action = function(){
   clearInterval(intervalId);
-  document.getElementById("bip").innerHTML = "TERMINE!";
+  document.getElementById("tictac").innerHTML = "TERMINE!";
+  document.getElementById("start").style.visibility="visible";
+  document.getElementById("xmas").style.visibility="hidden";
+  document.getElementById("start").disabled=false;
 }
 
-function bip(){
-  document.getElementById("bip").innerHTML = counter + " secondes restantes";
+let bip = function(){
+  document.getElementById("tictac").innerHTML = counter + " <br/>secondes restantes";
   counter--;
 }
-function start(){
+let start = function(){
+  document.getElementById("start").style.visibility="hidden";
+  document.getElementById("xmas").style.visibility="visible";
   intervalId = setInterval(bip, 1000);
   setTimeout(action, counter * 1000);
 }

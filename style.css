@@ -97,10 +97,187 @@ h1 {
   visibility: hidden;
 }
 
+.xmas {
+  display: flex;
+  justify-content: center;
+  position: relative;;
+  height: 600px;
+  width: 1220px;
+  margin: auto;
+  visibility: hidden;
+}
+
+.present {
+  position: relative;
+  height: 45px;
+  width: 45px;
+  z-index: 100;
+}
+
+
+/* gift reglage sur mesure de chaque chutte*/
+.gift {
+  /*flex: 1;*/
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift2 {
+  /*flex: 1;*/
+  animation-duration: 4.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift3 {
+  /*flex: 1;*/
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift4 {
+  /*flex: 1;*/
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift5 {
+  /*flex: 1;*/
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift6 {
+  /*flex: 1;*/
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift7 {
+  /*flex: 1;*/
+  animation-duration: 5.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift8 {
+  /*flex: 1;*/
+  animation-duration: 2.9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift9 {
+  /*flex: 1;*/
+    animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift10 {
+  /*flex: 1;*/
+  animation-duration: 7.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift11 {
+  /*flex: 1;*/
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift12 {
+  /*flex: 1;*/
+  animation-duration: 6.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift13 {
+  /*flex: 1;*/
+  animation-duration: 5.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift14 {
+  /*flex: 1;*/
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift15 {
+  /*flex: 1;*/
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift16 {
+  /*flex: 1;*/
+  animation-duration: 2.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift17 {
+  /*flex: 1;*/
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+
+.gift18 {
+  /*flex: 1;*/
+  animation-duration: 2.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+.gift19 {
+  /*flex: 1;*/
+  animation-duration: 1.1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+
+.gift20 {
+  /*flex: 1;*/
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: gift;
+}
+@keyframes gift {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
 
 /* Score */
 
-/* Timer */
+/* Timer Jeu */
+
+#tictac {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* Timer avant noel */
 
 .time {
   display: flex;
