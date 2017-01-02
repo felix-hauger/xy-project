@@ -80,6 +80,10 @@ footer {
 
 }
 
+/* Change cursor :*/
+.game {
+  cursor: url(img/sled2.png) 16 0, auto;
+}
 /* H titles */
 
 h1 {
@@ -91,7 +95,18 @@ h1 {
 
 /* Lutins */
 
-/* GIfts */
+/* Gifts */
+.gift, .giftcontain, .trap {
+  width: 3em;
+  height: 3em;
+}
+
+.giftcontain {
+  background: pink;
+}
+.giftcontain:hover {
+  background: green;
+}
 
 .hidden {
   visibility: hidden;
