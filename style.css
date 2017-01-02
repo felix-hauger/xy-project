@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  background-size:contain;
 }
 header {
 
@@ -13,25 +14,23 @@ header {
 }
 
 main {
-  border: 2px solid black;
   flex: 5;
 }
 
 aside {
-  border: 2px solid blue;
   flex: 1;
 }
 
 section {
-  border: 2px solid red;
 }
 
 .lutins {
-  border: 2px solid pink;
 }
 .game {
   position: relative;
-  border: 2px solid deeppink;
+  height:95vh;
+  background: url('img/bg2.png') no-repeat;
+  background-size: contain;
 }
 
 img {
@@ -39,7 +38,6 @@ img {
   max-height: 100vh;
 }
 .sleigh {
-  border: 2px solid grey;
 }
 
 .dnone {
@@ -72,10 +70,14 @@ img {
 
 
 footer {
+  position: absolute;
+  top: 25%;
+  left:20%;
+  padding:2%;
   display: flex;
   justify-content: space-around;
   background: #dedede;
-  border: 2px solid green;
+
 }
 
 /* H titles */
@@ -91,6 +93,11 @@ h1 {
 
 /* GIfts */
 
+.hidden {
+  visibility: hidden;
+}
+
+
 /* Score */
 
 /* Timer */
@@ -102,6 +109,12 @@ h1 {
 
 .countain {
   box-sizing: border-box;
+}
+
+.compt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .countain p {

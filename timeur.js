@@ -2,7 +2,7 @@
 
 const countdownController = {
     // Configuration
-    targetTime: new Date('2016-12-25 00:00:00'), // Date cible du compte à rebours (00:00:00)
+    targetTime: new Date('2017-12-25 00:00:00'), // Date cible du compte à rebours (00:00:00)
     displayElement: { // Elements HTML où sont affichés les informations
         day:  0,
         hour: 0,
