@@ -1,3 +1,23 @@
+// Creation compte a rebours
+
+"use strict"
+
+let counter = 60;
+let intervalId = null;
+function action(){
+  clearInterval(intervalId);
+  document.getElementById("bip").innerHTML = "TERMINE!";
+}
+
+function bip(){
+  document.getElementById("bip").innerHTML = counter + " secondes restantes";
+  counter--;
+}
+function start(){
+  intervalId = setInterval(bip, 1000);
+  setTimeout(action, counter * 1000);
+}
+
 // Creation du Timeur
 
 const countdownController = {
