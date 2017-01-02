@@ -10,6 +10,7 @@ header {
 .container {
   display: flex;
   justify-content: space-around;
+  height: 100%;
 }
 
 main {
@@ -32,6 +33,11 @@ section {
 .game {
   position: relative;
   border: 2px solid deeppink;
+  cursor: url(img/sled2.png) 16 0, auto; /* change cursor */
+  overflow: hidden;
+  height: 100%;
+  background: url(img/bg.gif);
+  background-size: contain;
 }
 
 img {
@@ -43,7 +49,7 @@ img {
 }
 
 .dnone {
-  display: none;
+  display: none !important;
 }
 
 /* Buttons */
@@ -78,10 +84,7 @@ footer {
   border: 2px solid green;
 }
 
-/* Change cursor :*/
-.game {
-  cursor: url(img/sled2.png) 16 0, auto;
-}
+
 /* H titles */
 
 h1 {
@@ -94,19 +97,6 @@ h1 {
 /* Lutins */
 
 /* Gifts */
-.gift, .giftcontain, .trap {
-  width: 3em;
-  height: 3em;
-}
-
-.giftcontain {
-  background: pink;
-}
-.giftcontain:hover {
-  background: green;
-}
-
-/* Score */
 
 /* Timer */
 
@@ -145,4 +135,185 @@ h1 {
   .santa {
     display:none;
   }
+}
+
+.fall2{
+width: 5%;
+display: inline;
+visibility: hidden;
+position: relative;
+top: -25em;
+}
+
+
+/* 1*/
+@keyframes slideOutDown {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(40px, 800px, 0px);
+  }
+}
+
+.slideOutDown {
+  animation-name: slideOutDown;
+}
+.slideInDown {
+  animation-name: slideInDown;
+  animation-duration: 5s;
+}
+
+
+
+/*  2 */
+@keyframes slideOutDown2 {
+  from {
+    transform: translate3d(300px, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(400px, 850px, 0px);
+  }
+}
+
+.slideOutDown2 {
+  animation-name: slideOutDown2;
+}
+.slideInDown2 {
+  animation-name: slideInDown2;
+  animation-duration: 5s;
+}
+
+
+
+/*  3 */
+@keyframes slideOutDown3 {
+  from {
+    transform: translate3d(600px, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(650px, 850px, 0px);
+  }
+}
+
+.slideOutDown3 {
+  animation-name: slideOutDown3;
+}
+.slideInDown3 {
+  animation-name: slideInDown3;
+  animation-duration: 5s;
+}
+
+
+
+/*  4 */
+@keyframes slideOutDown4 {
+  from {
+    transform: translate3d(680px, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(200px, 850px, 0px);
+  }
+}
+
+.slideOutDown4 {
+  animation-name: slideOutDown4;
+}
+.slideInDown4 {
+  animation-name: slideInDown4;
+  animation-duration: 9s;
+}
+
+
+
+/*  5 */
+@keyframes slideOutDown5 {
+  from {
+    transform: translate3d(1000px, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(350px, 850px, 0px);
+  }
+}
+
+.slideOutDown5 {
+  animation-name: slideOutDown5;
+
+}
+.slideInDown5 {
+  animation-name: slideInDown5;
+  animation-duration: 2s;
+}
+
+
+
+/*  6 */
+@keyframes slideOutDown6 {
+  from {
+    transform: translate3d(0,0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0px, 300px, 0);
+
+  }
+}
+
+.slideOutDown6 {
+  animation-name: slideOutDown6;
+  float: right;
+}
+.slideOutDown6 {
+  animation-name: slideOutDown6;
+  animation-duration: 2s;
+}
+
+
+
+
+
+/* PIEGE */
+
+
+@keyframes slideOutDownpiege {
+  from {
+    transform: translate3d(196px,0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(100px, 900px, 0);
+
+  }
+}
+
+.slideOutDownpiege {
+  animation-name: slideOutDownpiege;
+
+}
+.slideOutDownpiege {
+  animation-name: slideOutDownpiege;
+  animation-duration: 2s;
+}
+
+
+/* all*/
+.animated {
+  animation-duration: 5s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
 }

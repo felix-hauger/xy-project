@@ -1,4 +1,4 @@
-
+"use strict";
 /*
 const collision = function () {
   addEventListener(querySelector(".gift").mouseOver())
@@ -6,17 +6,17 @@ const collision = function () {
 var cpt = 0;
 
 let mouseOver = function () {
-  if (this.classList.contains('gift')) {
+  if (this.classList.contains('present')) {
     cpt++;
   } else {
     cpt-=3;
   }
-  this.style.display = "none" ;
+  this.style.visibility = "hidden" ;
   document.getElementById("score").innerHTML = cpt;
 }
 
-for(let gift of document.getElementsByClassName("gift")) {
-  gift.onmouseover = mouseOver;
+for(let present of document.getElementsByClassName("present")) {
+  present.onmouseover = mouseOver;
 }
 
 for(let trap of document.getElementsByClassName("trap")) {
@@ -34,6 +34,10 @@ for(let trap of document.getElementsByClassName("trap")) {
 const ready = function() {
   document.querySelector("#start").addEventListener("click", function() {
     document.querySelector("footer").classList.add("dnone");
+    document.getElementById("start").classList.add("dnone");
+    for(let present of document.getElementsByClassName("fall2")) {
+      present.style.visibility = "visible";
+    }
   });
 }
 document.addEventListener("DOMContentLoaded", ready);
