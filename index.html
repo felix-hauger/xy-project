@@ -6,20 +6,65 @@
     <title>Projet Kittens</title>
   </head>
   <body>
-    <header>
+    <header class="dnone">
       <h1>Projet Kittens</h1>
     </header>
     <div class="container">
-      <aside class="santa">
-        <h4>Père Noêl</h4>
+      <aside class="santa dnone">
+        <h4>Père Noël</h4>
+        <img class=".hidden" src="img/pere-noel.png" alt="" />
       </aside>
       <main>
-        <div class="lutins">
+        <div class="lutins dnone">
           <h4>Lutins</h4>
         </div>
         <div class="game">
-          <h4>Game</h4>
-          <button type="button" name="button">Démarrer</button>
+          <div id="xmas" class="xmas">
+             <div class="" style="display: block">
+
+                 <img class=" present gift2" src="img/cadeau1.png" alt="" id="Cadeau1" />
+                 <img class="present gift3" src="img/cadeau2.png" alt="" id="Cadeau2"/>
+                 <img class="present gift4" src="img/cadeau3.png" alt="" id="Cadeau3"/>
+                 <img class="present gift5" src="img/cadeau4.png" alt="" id="Cadeau4"/>
+                 <img class="present gift6" src="img/cadeau5.png" alt="" id="Cadeau5"/>
+                 <img class="present gift7" src="img/cadeaupiege.png" alt="" id="Cadeau6"/>
+             </div>
+             <div class="">
+
+                 <img class="present gift8" src="img/cadeau1.png" alt="" id="Cadeau7"/>
+                 <img class="present gift9" src="img/cadeau2.png" alt="" id="Cadeau8"/>
+                 <img class="present gift20" src="img/cadeau3.png" alt="" id="Cadeau9"/>
+                 <img class="present gift11" src="img/cadeau4.png" alt="" id="Cadeau10"/>
+                 <img class="present gift12" src="img/cadeau5.png" alt="" id="Cadeau11"/>
+                 <img class="present gift13" src="img/cadeaupiege.png" alt=""id="Cadeau12" />
+             </div>
+
+             <div class="">
+
+                 <img class="present gift14" src="img/cadeaupiege.png" alt="" id="Cadeau13"/>
+                 <img class="present gift15" src="img/cadeau1.png" alt="" id="Cadeau14"/>
+                 <img class="present gift16" src="img/cadeau2.png" alt=""id="Cadeau15" />
+                 <img class="present gift17" src="img/cadeau3.png" alt="" id="Cadeau16"/>
+                 <img class="present gift18" src="img/cadeau4.png" alt="" id="Cadeau17"/>
+                 <img class="present gift19" src="img/cadeau5.png" alt=""id="Cadeau18" />
+                 <img class="present gift20" src="img/cadeaupiege.png" alt=""id="Cadeau19" />
+             </div>
+
+             <div class="">
+
+                 <img class="present gift2" src="img/cadeau1.png" alt="" id="Cadeau20"/>
+                 <img class="present gift3" src="img/cadeau2.png" alt="" id="Cadeau21"/>
+                 <img class="present gift4" src="img/cadeau3.png" alt="" id="Cadeau22"/>
+                 <img class="present gift5" src="img/cadeau4.png" alt="" id="Cadeau23"/>
+                 <img class="present gift6" src="img/cadeau5.png" alt="" id="Cadeau24" />
+                 <img class="present gift7" src="img/cadeaupiege.png" alt="" id="Cadeau25"/>
+             </div>
+
+
+         </div>
+
+          <img class="hidden" src="img/bg2.png" alt="" />
+          <button type="button" name="button" id="start" onclick="start()">Démarrer</button>
         </div>
         <div class="sleigh">
           <h4>sleigh</h4>
@@ -30,9 +75,34 @@
         <h4>Scorel</h4>
         </section>
         <section id="timer">
-          <h4>Timer</h4>
-        </section>
+          <div id="countdown">
+            <h4>Timer</h4>
+            <div id="tictac"></div>
+            <div class="time">
 
+          </div>
+        </section>
+        <section id="timer">
+          <img src="img/pere-noel.png" alt="" />
+          <div id="countdown">
+    <h4>Il reste ... </h4>
+    <div class="time">
+      <div class="countain">
+        <span class="count" id="countdown_day" >--</span> <p>jours</p>
+      </div>
+      <div class="countain">
+        <span class="count" id="countdown_hour">--</span> <p>heures</p>
+      </div>
+      <div class="countain">
+        <span class="count" id="countdown_min" >--</span> <p>minutes</p>
+      </div>
+      <div class="countain">
+        <span class="count" id="countdown_sec" >--</span> <p>secondes</p>
+      </div>
+    </div>
+    <h4>Avant Noêl </h4>
+          </div>
+        </section>
       </aside>
 
     </div>
@@ -42,16 +112,17 @@
           <h3>Instructions</h3>
           <p> Tu as 1 minutes pour recupérer le maximum de cadeau dans le traineau du père noel ! Attention certains sont piégés !  </p>
       </section>
-      <section class="footercol">
+      <section class="footercol dnone">
         <h3>Le Mot de l'équipe</h3>
-
+        <span>Tartiflette</span>
       </section >
-      <section class="footercol">
+      <section class="footercol dnone">
         <h3>Contact</h3>
 
       </section>
     </footer>
     <script src="app.js" charset="utf-8"></script>
     <script src="compt.js" charset="utf-8"></script>
+    <script src="timeur.js" charset="utf-8"></script>
   </body>
 </html>
