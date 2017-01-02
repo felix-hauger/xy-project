@@ -6,7 +6,7 @@ const collision = function () {
 var cpt = 0;
 
 let mouseOver = function () {
-  if (this.classList.contains('gift')) {
+  if (this.classList.contains('present')) {
     cpt++;
   } else {
     cpt-=3;
@@ -15,7 +15,7 @@ let mouseOver = function () {
   document.getElementById("score").innerHTML = cpt;
 }
 
-for(let gift of document.getElementsByClassName("gift")) {
+for(let gift of document.getElementsByClassName("present")) {
   gift.onmouseover = mouseOver;
 }
 

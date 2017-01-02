@@ -122,7 +122,7 @@ h1 {
   visibility: hidden;
 }
 
-.present {
+.present, .trap {
   position: relative;
   height: 45px;
   width: 45px;
