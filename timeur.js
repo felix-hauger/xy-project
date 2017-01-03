@@ -2,7 +2,7 @@
 
 "use strict"
 
-let counter = 10;
+let counter = 30;
 let intervalId = null;
 let action = function(){
   clearInterval(intervalId);
